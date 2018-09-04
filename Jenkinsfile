@@ -11,8 +11,6 @@ pipeline {
                 sh 'npm run build'
             }
         }
-    }
-    stages {
         stage('test') {
             steps {
                 sh 'npm test'
